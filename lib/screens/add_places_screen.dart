@@ -20,9 +20,15 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
         backgroundColor: Colors.black,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Text('add place'),
           ElevatedButton.icon(
+            style: const ButtonStyle(
+              backgroundColor: MaterialStatePropertyAll(Colors.amber),
+              foregroundColor: MaterialStatePropertyAll(Colors.black),
+            ),
             onPressed: () {},
             icon: const Icon(Icons.add),
             label: const Text('Add Place'),
