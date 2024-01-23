@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AddPlacesScreen extends StatefulWidget {
   const AddPlacesScreen({super.key});
+  static const routeName = '/add-places';
 
   @override
   State<AddPlacesScreen> createState() => _AddPlacesScreenState();
