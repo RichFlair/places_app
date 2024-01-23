@@ -19,6 +19,16 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
         ),
         backgroundColor: Colors.black,
       ),
+      body: Column(
+        children: [
+          const Text('add place'),
+          ElevatedButton.icon(
+            onPressed: () {},
+            icon: const Icon(Icons.add),
+            label: const Text('Add Place'),
+          ),
+        ],
+      ),
     );
   }
 }
