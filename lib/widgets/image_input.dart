@@ -16,6 +16,9 @@ class _ImageInputState extends State<ImageInput> {
     return Row(
       children: [
         Container(
+          alignment: Alignment.center,
+          width: 130,
+          height: 130,
           decoration: BoxDecoration(
             border: Border.all(color: Colors.grey),
           ),
@@ -26,17 +29,19 @@ class _ImageInputState extends State<ImageInput> {
                   width: double.infinity,
                 )
               : const Text(
-                  'No Image',
+                  'No Image Taken',
                   textAlign: TextAlign.center,
                 ),
         ),
         const SizedBox(
           width: 10,
         ),
-        TextButton.icon(
-          onPressed: () {},
-          icon: const Icon(Icons.camera),
-          label: const Text('Take Picture'),
+        Expanded(
+          child: TextButton.icon(
+            onPressed: () {},
+            icon: const Icon(Icons.camera),
+            label: const Text('Take Picture'),
+          ),
         ),
       ],
     );
