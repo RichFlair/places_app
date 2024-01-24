@@ -20,10 +20,20 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
         backgroundColor: Colors.black,
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Text('add place'),
+          const Expanded(
+            child: Padding(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                children: [
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Title'),
+                  ),
+                ],
+              ),
+            ),
+          ),
           // add-places button container
           ElevatedButton.icon(
             style: const ButtonStyle(
