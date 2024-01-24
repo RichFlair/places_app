@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:places_app/widgets/image_input.dart';
+
 class AddPlacesScreen extends StatefulWidget {
   const AddPlacesScreen({super.key});
   static const routeName = '/add-places';
@@ -31,6 +33,10 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
                     TextField(
                       decoration: InputDecoration(labelText: 'Title'),
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    ImageInput(),
                   ],
                 ),
               ),
