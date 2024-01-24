@@ -24,10 +24,16 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Text('add place'),
+          // add-places button container
           ElevatedButton.icon(
             style: const ButtonStyle(
+              shape: MaterialStatePropertyAll(
+                RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+              ),
               backgroundColor: MaterialStatePropertyAll(Colors.amber),
               foregroundColor: MaterialStatePropertyAll(Colors.black),
+              elevation: MaterialStatePropertyAll(0),
+              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             ),
             onPressed: () {},
             icon: const Icon(Icons.add),
