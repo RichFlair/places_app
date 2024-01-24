@@ -23,14 +23,16 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Expanded(
-            child: Padding(
-              padding: EdgeInsets.all(10),
-              child: Column(
-                children: [
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Title'),
-                  ),
-                ],
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Column(
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(labelText: 'Title'),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
